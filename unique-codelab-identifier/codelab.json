@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-24T23:06:21-07:00",
+  "id": "unique-codelab-identifier",
+  "duration": 0,
+  "title": "My Codelab",
+  "summary": "Summary of your codelab that is human readable",
+  "source": "codelab.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "feedback": "github.com/changjerry",
+  "url": "unique-codelab-identifier"
+}
