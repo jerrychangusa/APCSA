@@ -3,23 +3,22 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2020-09-24T23:06:21-07:00",
-  "id": "unique-codelab-identifier",
+  "updated": "2020-09-24T23:41:43-07:00",
+  "id": "dragonball-z-game",
   "duration": 0,
-  "title": "My Codelab",
-  "summary": "Summary of your codelab that is human readable",
+  "title": "AP CS A: Dragon Ball Z Game",
+  "summary": "Walkthrough of Dragon Ball Z Game",
   "source": "codelab.md",
   "theme": "",
   "status": [
     "published"
   ],
   "category": [
-    "codelab",
-    "markdown"
+    "apcsa"
   ],
   "tags": [
     "web"
   ],
   "feedback": "github.com/changjerry",
-  "url": "unique-codelab-identifier"
+  "url": "dragonball-z-game"
 }
