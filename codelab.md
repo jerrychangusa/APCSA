@@ -189,7 +189,6 @@ Write a method with the following siganture that takes as input the player's ene
 **public static String getUserMove(int energyPoints);** 
 
 ```console
-Turn 1
 Select from one of the following moves ("defend", "charge energy"): defend
 ```
 
