@@ -179,7 +179,7 @@ Computer Life Points: 3
 
 When you are done, commit your code and move on to checkpoint 2.
 
-## Checkpoint 2: Begin a Turn
+## Checkpoint 2: Select User Move
 To begin a turn, print the turn number and prompt the user to enter a valid move.
 
 **Write a helper method** that takes as input the player's energy point, prompts the user to enter a move, and returns the move the player entered.
@@ -210,7 +210,7 @@ Use the table from "Rules of hte Game" to determine which scenarios will result 
 
 The helper method written here can be used to deduct life points from either the player or the computer.
 
-## Checkpoint 6: Print Results
+## Checkpoint 6: Begin a Turn
 1. In the main method, begin the game by calling the helper method from **Checkpoint 1**. 
 2. Prompt the user for a move by calling the helper method from **Checkpoint 2**.
 3. Get the computer's move by calling the helper method from **Checkpoint 3**.
