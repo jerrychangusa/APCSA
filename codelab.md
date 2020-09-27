@@ -166,8 +166,10 @@ No winner after 30 turns!
 ## Checkpoint 1: Begin the Game
 To begin the game, ensure that the energy points and life points for the player and computer are initialized.
 
-Since we will be printing these points out after every turn, **write a helper method** that takes the player's life points, the player's energy points, the computer's life points, and the computer's energy points
+Write a method with the following signature that takes the player's life points, the player's energy points, the computer's life points, and the computer's energy points
 as input and prints out these points to the console.
+
+**public static void printPoints(int playerEnergyPoints, int playerLifePoints, int computerEnergyPoints, int playerEnergyPoints);**
 
 ```console
 Player Energy Points: 0
@@ -182,7 +184,9 @@ When you are done, commit your code and move on to checkpoint 2.
 ## Checkpoint 2: Select User Move
 To begin a turn, print the turn number and prompt the user to enter a valid move.
 
-**Write a helper method** that takes as input the player's energy point, prompts the user to enter a move, and returns the move the player entered.
+Write a method with the following siganture that takes as input the player's energy point, prompts the user to enter a move, and returns the move the player entered.
+
+**public static String getUserMove(int energyPoints);** 
 
 ```console
 Turn 1
@@ -193,10 +197,14 @@ Negative
 : Be sure to include error checking to ensure the user enters a valid move. If the player enters an invalid move, either select a valid one for them or continue asking for a valid move.
 
 ## Checkpoint 3: Select Computer Move
-**Write a helper method** that takes as input the computer's energy point and returns a randomly selected valid move for the computer.
+Write a method with the following signature that takes as input the computer's energy point and returns a randomly selected valid move for the computer.
+
+**public static String getComputerMove(int energyPoints);** 
 
 ## Checkpoint 4: Calculate Energy Point Cost
-**Write a helper method** that takes as input a valid move and returns the amount of energy the move will cost. 
+Write a helper method that takes as input a valid move and returns the amount of energy the move will cost. 
+
+**public static int getEnergyPointsCost(String move);** 
 
 * "attack" should returns 1.
 * "charge energy" returne -1.
@@ -204,24 +212,26 @@ Negative
 * "defend" returns 0. 
 
 ## Checkpoint 5: Calculate Life Point Cost
-**Write a helper method** that takes as input a player's valid move and an opponent's valid move and returns the amount of life points to deduct from the player.
+Write a method with the following signature that takes as input a player's valid move and an opponent's valid move and returns the amount of life points to deduct from the player.
 
-Use the table from "Rules of hte Game" to determine which scenarios will result in a life point dedcution.
+**public static int getLifePointsCost(String move);** 
 
-The helper method written here can be used to deduct life points from either the player or the computer.
+Use the table from "Rules of the Game" to determine which scenarios will result in a life point dedcution.
+
+The getLifePointsCost method can be used to deduct life points for either the player or the computer.
 
 ## Checkpoint 6: Begin a Turn
-1. In the main method, begin the game by calling the helper method from **Checkpoint 1**. 
-2. Prompt the user for a move by calling the helper method from **Checkpoint 2**.
-3. Get the computer's move by calling the helper method from **Checkpoint 3**.
-4. Deduct or increase the player's energy points by calling the helper method from **Checkpoint 4**.
-5. Deduct or increase the computer's energy points by calling the helper method from **Checkpoint 4**.
-6. Deduct or increase the players's life points by calling the helper method from **Checkpoint 5**.
-7. Deduct or increase the computer's life points by calling the helper method from **Checkpoint 5**.
-8. Print the result of the move by calling the helper method from **Checkpoint 1**
+1. In the main method, begin the game by calling **printPoints**. 
+2. Prompt the user for a move by calling **getUserMove**.
+3. Get the computer's move by calling **getComputerMove**.
+4. Deduct or increase the player's energy points by calling **getEnergyPointsCost**.
+5. Deduct or increase the computer's energy points by calling **getEnergyPointsCost**.
+6. Deduct or increase the players's life points by calling **getLifePointsCost**.
+7. Deduct or increase the computer's life points by calling **getLifePointsCost**.
+8. Print the result of the move by calling **printPoints**
 
 ## Checkpoint 7: Continue the Game
-Add a for loop to the main method to ensure that 30 turns can be played.
+Add a for loop to the main method to ensure that 30 turns can be played. Be sure to print the turn number before each turn.
 
 ## Checkpoint 8: Determine Winner
 Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player's energy points before the next turn.

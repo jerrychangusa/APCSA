@@ -201,7 +201,8 @@ No winner after 30 turns!
     
       <google-codelab-step label="Checkpoint 1: Begin the Game" duration="0">
         <p>To begin the game, ensure that the energy points and life points for the player and computer are initialized.</p>
-<p>Since we will be printing these points out after every turn, <strong>write a helper method</strong> that takes the player&#39;s life points, the player&#39;s energy points, the computer&#39;s life points, and the computer&#39;s energy points as input and prints out these points to the console.</p>
+<p>Write a method with the following signature that takes the player&#39;s life points, the player&#39;s energy points, the computer&#39;s life points, and the computer&#39;s energy points as input and prints out these points to the console.</p>
+<p><strong>public static void printPoints(int playerEnergyPoints, int playerLifePoints, int computerEnergyPoints, int playerEnergyPoints);</strong></p>
 <pre>Player Energy Points: 0
 Player Life Points: 3
 
@@ -215,7 +216,8 @@ Computer Life Points: 3
     
       <google-codelab-step label="Checkpoint 2: Select User Move" duration="0">
         <p>To begin a turn, print the turn number and prompt the user to enter a valid move.</p>
-<p><strong>Write a helper method</strong> that takes as input the player&#39;s energy point, prompts the user to enter a move, and returns the move the player entered.</p>
+<p>Write a method with the following siganture that takes as input the player&#39;s energy point, prompts the user to enter a move, and returns the move the player entered.</p>
+<p><strong>public static String getUserMove(int energyPoints);</strong></p>
 <pre>Turn 1
 Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34;): defend
 </pre>
@@ -226,13 +228,15 @@ Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34
       </google-codelab-step>
     
       <google-codelab-step label="Checkpoint 3: Select Computer Move" duration="0">
-        <p><strong>Write a helper method</strong> that takes as input the computer&#39;s energy point and returns a randomly selected valid move for the computer.</p>
+        <p>Write a method with the following signature that takes as input the computer&#39;s energy point and returns a randomly selected valid move for the computer.</p>
+<p><strong>public static String getComputerMove(int energyPoints);</strong></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Checkpoint 4: Calculate Energy Point Cost" duration="0">
-        <p><strong>Write a helper method</strong> that takes as input a valid move and returns the amount of energy the move will cost.</p>
+        <p>Write a helper method that takes as input a valid move and returns the amount of energy the move will cost.</p>
+<p><strong>public static int getEnergyPointsCost(String move);</strong></p>
 <ul>
 <li>&#34;attack&#34; should returns 1.</li>
 <li>&#34;charge energy&#34; returne -1.</li>
@@ -244,30 +248,31 @@ Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34
       </google-codelab-step>
     
       <google-codelab-step label="Checkpoint 5: Calculate Life Point Cost" duration="0">
-        <p><strong>Write a helper method</strong> that takes as input a player&#39;s valid move and an opponent&#39;s valid move and returns the amount of life points to deduct from the player.</p>
-<p>Use the table from &#34;Rules of hte Game&#34; to determine which scenarios will result in a life point dedcution.</p>
-<p>The helper method written here can be used to deduct life points from either the player or the computer.</p>
+        <p>Write a method with the following signature that takes as input a player&#39;s valid move and an opponent&#39;s valid move and returns the amount of life points to deduct from the player.</p>
+<p><strong>public static int getLifePointsCost(String move);</strong></p>
+<p>Use the table from &#34;Rules of the Game&#34; to determine which scenarios will result in a life point dedcution.</p>
+<p>The getLifePointsCost method can be used to deduct life points for either the player or the computer.</p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Checkpoint 6: Begin a Turn" duration="0">
         <ol type="1">
-<li>In the main method, begin the game by calling the helper method from <strong>Checkpoint 1</strong>.</li>
-<li>Prompt the user for a move by calling the helper method from <strong>Checkpoint 2</strong>.</li>
-<li>Get the computer&#39;s move by calling the helper method from <strong>Checkpoint 3</strong>.</li>
-<li>Deduct or increase the player&#39;s energy points by calling the helper method from <strong>Checkpoint 4</strong>.</li>
-<li>Deduct or increase the computer&#39;s energy points by calling the helper method from <strong>Checkpoint 4</strong>.</li>
-<li>Deduct or increase the players&#39;s life points by calling the helper method from <strong>Checkpoint 5</strong>.</li>
-<li>Deduct or increase the computer&#39;s life points by calling the helper method from <strong>Checkpoint 5</strong>.</li>
-<li>Print the result of the move by calling the helper method from <strong>Checkpoint 1</strong></li>
+<li>In the main method, begin the game by calling <strong>printPoints</strong>.</li>
+<li>Prompt the user for a move by calling <strong>getUserMove</strong>.</li>
+<li>Get the computer&#39;s move by calling <strong>getComputerMove</strong>.</li>
+<li>Deduct or increase the player&#39;s energy points by calling <strong>getEnergyPointsCost</strong>.</li>
+<li>Deduct or increase the computer&#39;s energy points by calling <strong>getEnergyPointsCost</strong>.</li>
+<li>Deduct or increase the players&#39;s life points by calling <strong>getLifePointsCost</strong>.</li>
+<li>Deduct or increase the computer&#39;s life points by calling <strong>getLifePointsCost</strong>.</li>
+<li>Print the result of the move by calling <strong>printPoints</strong></li>
 </ol>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Checkpoint 7: Continue the Game" duration="0">
-        <p>Add a for loop to the main method to ensure that 30 turns can be played.</p>
+        <p>Add a for loop to the main method to ensure that 30 turns can be played. Be sure to print the turn number before each turn.</p>
 
 
       </google-codelab-step>
