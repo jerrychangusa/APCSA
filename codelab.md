@@ -166,10 +166,10 @@ No winner after 30 turns!
 ## Checkpoint 1: Begin the Game
 To begin the game, ensure that the energy points and life points for the player and computer are initialized.
 
-Write a method with the following signature that takes the player's life points, the player's energy points, the computer's life points, and the computer's energy points
+Write a method with the following signature that takes the player's energy points, the player's life points, the computer's energy points, and the computer's life points.
 as input and prints out these points to the console.
 
-**public static void printPoints(int playerEnergyPoints, int playerLifePoints, int computerEnergyPoints, int playerEnergyPoints);**
+**public static void printPoints(int playerEnergyPoints, int playerLifePoints, int computerEnergyPoints, int computerLifePoints);**
 
 ```console
 Player Energy Points: 0
