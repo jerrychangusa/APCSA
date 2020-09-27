@@ -129,7 +129,7 @@ Computer Life Points: 3
 ```
 
 ### End the Game if a Player Loses All Life Points
-Prompt the player to select a valid move based on their energy points.
+Once a player has lost all of their life points, the other player is named the winner and the game ends.
 
 ```console
 Player Move: charge energy
@@ -146,7 +146,7 @@ Computer Wins!
 ```
 
 ### End the Game after 30 turns
-Prompt the player to select a valid move based on their energy points.
+If neither player has lost all of their life points after 30 turns, the game ends as a tie.
 
 ```console
 Player Move: defend
