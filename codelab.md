@@ -214,7 +214,7 @@ Write a helper method that takes as input a valid move and returns the amount of
 ## Checkpoint 5: Calculate Life Point Cost
 Write a method with the following signature that takes as input a player's valid move and an opponent's valid move and returns the amount of life points to deduct from the player.
 
-**public static int getLifePointsCost(String playerMove, String oppoentMove);** 
+**public static int getLifePointsCost(String playerMove, String opponentMove);** 
 
 Use the table from "Rules of the Game" to determine which scenarios will result in a life point dedcution.
 
