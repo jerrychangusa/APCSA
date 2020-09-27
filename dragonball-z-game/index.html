@@ -35,11 +35,11 @@
       </google-codelab-step>
     
       <google-codelab-step label="Rules of the Game" duration="0">
-        <p>Your Dragon Ball Z game is a two-player game where a human player will compete against a computer player in an epic fight! Both players start the game with zero energy points and three life points. The game ends when one player reaches zero life points or after 30 moves.</p>
+        <p>Your Dragon Ball Z game is a two-player game where a human player will compete against a computer player in an epic fight! Both players start the game with zero energy points and three life points. The game ends when one player reaches zero life points or after 30 turns.</p>
 <p>Every turn, both players must choose one of the following moves:</p>
 <ul>
 <li>Charge Energy (+1 energy point)  🔋</li>
-<li>Normal Attack (-1 energy point)   ⚔️</li>
+<li>Attack (-1 energy point)   ⚔️</li>
 <li>Special Attack (-8 energy points) ⚡️</li>
 <li>Defend (0 energy points)          🛡</li>
 </ul>
@@ -56,7 +56,7 @@
 </td><td colspan="1" rowspan="1"><p>+1 energy point</p>
 </td><td colspan="1" rowspan="1"><p>+1 energy point</p>
 </td></tr>
-<tr><td colspan="1" rowspan="1"><p>Normal Attack ⚔️</p>
+<tr><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>Charge Energy 🔋</p>
 </td><td colspan="1" rowspan="1"><p>-1 energy point</p>
 </td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
@@ -71,18 +71,18 @@
 </td><td colspan="1" rowspan="1"><p>nothing</p>
 </td><td colspan="1" rowspan="1"><p>+1 energy point</p>
 </td></tr>
-<tr><td colspan="1" rowspan="1"><p>Normal Attack ⚔️</p>
-</td><td colspan="1" rowspan="1"><p>Normal Attack ⚔️</p>
+<tr><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
+</td><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
 </td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Special Attack  ⚡️</p>
-</td><td colspan="1" rowspan="1"><p>Normal Attack⚔️</p>
+</td><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>-8 energy points</p>
 </td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Defend 🛡</p>
-</td><td colspan="1" rowspan="1"><p>Normal Attack ⚔️</p>
+</td><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>nothing</p>
 </td><td colspan="1" rowspan="1"><p>-1 energy point</p>
 </td></tr>
@@ -106,12 +106,95 @@
 
       </google-codelab-step>
     
-      <google-codelab-step label="Feature List" duration="0">
-        <p>To build this game, you will implement as many features as you can from the following list:</p>
-<h2 is-upgraded>1. Calulate Energy Point Costs [3 points]</h2>
-<p>Implement a method which takes as input a player&#39;s move and returns the energy cost for the move.</p>
-<h2 is-upgraded>2. Calulate Life Point Costs [3 points]</h2>
-<p>Implement a method which takes as input the player&#39;s move and the opponent&#39;s move and returns the number of life points that were lost for the player.</p>
+      <google-codelab-step label="Example Gameplay" duration="0">
+        <h2 is-upgraded>Begin the Game</h2>
+<p>When the game starts, the player and computer both start out with 0 energy points and 3 life points. Print out each player&#39;s points to start the game.</p>
+<pre>Starting the Dragon Ball Z Game!
+Player Energy Points: 0
+Player Life Points: 3
+
+Computer Energy Points: 0
+Computer Life Points: 3
+</pre>
+<h2 is-upgraded>Start a Turn</h2>
+<p>Prompt the player to select a valid move based on their energy points. If the player does not have enough energy points for an attack, do not prompt the player to attack.</p>
+<pre>Turn 1
+Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34;): charge energy
+</pre>
+<h2 is-upgraded>Determine Outcome From Turn 1</h2>
+<p>Print out the moves that were chosen by the player and the computer as well as the life points and energy points.</p>
+<pre>Player Move: charge energy
+Computer Move: charge energy
+
+Result
+Player Energy Points: 1
+Player Life Points: 3
+
+Computer Energy Points: 1
+Computer Life Points: 3
+</pre>
+<h2 is-upgraded>Start Another Turn</h2>
+<p>Prompt the player to select a valid move based on their energy points.</p>
+<pre>Turn 2
+Select from one of the following moves (&#34;attack&#34;, &#34;defend&#34;, &#34;charge energy&#34;): attack
+</pre>
+<h2 is-upgraded>Determine Outcome From Turn 2</h2>
+<p>Print out the moves that were chosen by the player and the computer as well as the life points and energy points.</p>
+<pre>Player Move: attack
+Computer Move: defend
+
+Result
+Player Energy Points: 0
+Player Life Points: 3
+
+Computer Energy Points: 1
+Computer Life Points: 3
+</pre>
+<h2 is-upgraded>Start Another Turn</h2>
+<p>Prompt the player to select a valid move based on their energy points.</p>
+<pre>Turn 3
+Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34;): charge energy
+</pre>
+<h2 is-upgraded>Determine Outcome From Turn 3</h2>
+<p>Print out the moves that were chosen by the player and the computer as well as the life points and energy points.</p>
+<pre>Player Move: charge energy
+Computer Move: attack
+
+Result
+Player Energy Points: 0
+Player Life Points: 2
+
+Computer Energy Points: 0
+Computer Life Points: 3
+</pre>
+<h2 is-upgraded>End the Game if a Player Loses All Life Points</h2>
+<p>Prompt the player to select a valid move based on their energy points.</p>
+<pre>Player Move: charge energy
+Computer Move: special attack
+
+Result
+Player Energy Points: 0
+Player Life Points: 0
+
+Computer Energy Points: 0
+Computer Life Points: 1
+
+Computer Wins!
+</pre>
+<h2 is-upgraded>End the Game after 30 turns</h2>
+<p>Prompt the player to select a valid move based on their energy points.</p>
+<pre>Player Move: defend
+Computer Move: defend
+
+Result
+Player Energy Points: 0
+Player Life Points: 3
+
+Computer Energy Points: 0
+Player Life Points: 3
+
+No winner after 30 turns!
+</pre>
 
 
       </google-codelab-step>
