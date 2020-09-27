@@ -44,7 +44,7 @@
 <li>Defend (0 energy points)          🛡</li>
 </ul>
 <p><strong>Note</strong>: Players can only attack if they have charged up sufficient energy points.</p>
-<p>The following table shows the result of a pair of moves chosen by two players:</p>
+<p> The following table shows the result of a pair of moves chosen by two players:</p>
 <table>
 <tr><td colspan="1" rowspan="1"><p><strong>Player 1</strong></p>
 </td><td colspan="1" rowspan="1"><p><strong>Player 2</strong></p>
@@ -194,6 +194,137 @@ Computer Energy Points: 0
 Player Life Points: 3
 
 No winner after 30 turns!
+</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 1: Begin the Game" duration="0">
+        <p>To begin the game, ensure that the energy points and life points for the player and computer are initialized.</p>
+<p>Since we will be printing these points out after every turn, <strong>write a helper method</strong> that takes the player&#39;s life points, the player&#39;s energy points, the computer&#39;s life points, and the computer&#39;s energy points as input and prints out these points to the console.</p>
+<pre>Player Energy Points: 0
+Player Life Points: 3
+
+Computer Energy Points: 0
+Computer Life Points: 3
+</pre>
+<p>When you are done, commit your code and move on to checkpoint 2.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 2: Begin a Turn" duration="0">
+        <p>To begin a turn, print the turn number and prompt the user to enter a valid move.</p>
+<p><strong>Write a helper method</strong> that takes as input the player&#39;s energy point, prompts the user to enter a move, and returns the move the player entered.</p>
+<pre>Turn 1
+Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34;): defend
+</pre>
+<aside class="warning"><p>Be sure to include error checking to ensure the user enters a valid move. If the player enters an invalid move, either select a valid one for them or continue asking for a valid move.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 3: Select Computer Move" duration="0">
+        <p><strong>Write a helper method</strong> that takes as input the computer&#39;s energy point and returns a randomly selected valid move for the computer.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 4: Calculate Energy Point Cost" duration="0">
+        <p><strong>Write a helper method</strong> that takes as input a valid move and returns the amount of energy the move will cost.</p>
+<ul>
+<li>&#34;attack&#34; should returns 1.</li>
+<li>&#34;charge energy&#34; returne -1.</li>
+<li>&#34;special attack&#34; returns 8.</li>
+<li>&#34;defend&#34; returns 0.</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 5: Calculate Life Point Cost" duration="0">
+        <p><strong>Write a helper method</strong> that takes as input a player&#39;s valid move and an opponent&#39;s valid move and returns the amount of life points to deduct from the player.</p>
+<p>Use the table from &#34;Rules of hte Game&#34; to determine which scenarios will result in a life point dedcution.</p>
+<p>The helper method written here can be used to deduct life points from either the player or the computer.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 6: Print Results" duration="0">
+        <ol type="1">
+<li>In the main method, begin the game by calling the helper method from <strong>Checkpoint 1</strong>.</li>
+<li>Prompt the user for a move by calling the helper method from <strong>Checkpoint 2</strong>.</li>
+<li>Get the computer&#39;s move by calling the helper method from <strong>Checkpoint 3</strong>.</li>
+<li>Deduct or increase the player&#39;s energy points by calling the helper method from <strong>Checkpoint 4</strong>.</li>
+<li>Deduct or increase the computer&#39;s energy points by calling the helper method from <strong>Checkpoint 4</strong>.</li>
+<li>Deduct or increase the players&#39;s life points by calling the helper method from <strong>Checkpoint 5</strong>.</li>
+<li>Deduct or increase the computer&#39;s life points by calling the helper method from <strong>Checkpoint 5</strong>.</li>
+<li>Print the result of the move by calling the helper method from <strong>Checkpoint 1</strong></li>
+</ol>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 7: Continue the Game" duration="0">
+        <p>Add a for loop to the main method to ensure that 30 turns can be played.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 8: Determine Winner" duration="0">
+        <p>Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player&#39;s energy points before the next turn.</p>
+<p>If any player loses all of their life points, declare the other player the winner and end the game.</p>
+<pre>Player Move: charge energy
+Computer Move: special attack
+
+Result
+Player Energy Points: 0
+Player Life Points: 0
+
+Computer Energy Points: 0
+Computer Life Points: 1
+
+Computer Wins!
+</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 9 (challenge): Easy, Medium, and Hard" duration="0">
+        <p>When the game begins, prompt the user to choose between three levels of computer difficulty.</p>
+<p>Implement different strategies for each difficulty level to make the game harder or easier.</p>
+<pre>Choose difficulty from Easy, Medium, and Hard: Easy
+</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 10 (challenge): Human vs Human" duration="0">
+        <p>When the game begins, prompt the user to choose between playing with a human or a computer.</p>
+<p>If they select to play with a human, ensure that both players are prompted to select a move each turn.</p>
+<pre>Choose to play against a human or a computer: human
+</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 11 (challenge): Computer vs Computer" duration="0">
+        <p>When the game begins, prompt for a human or computer for player 1 and player 2.</p>
+<p>If they select a computer for both, play a simulated game</p>
+<pre>Choose a human or a computer for Player 1: computer
+Choose difficulty from Easy, Medium, and Hard for Player 1: Easy
+Choose a human or a computer for Player 2: computer
+Choose difficulty from Easy, Medium, and Hard for Player 2: Hard
+</pre>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Checkpoint 13 (challenge): Three Player Game" duration="0">
+        <p>When the game begins, prompt for the number of players and support 2 or 3 players.</p>
+<p>Modify the game to work with three players (human or computer).</p>
+<pre>Enter the number of player (2 or 3): 
 </pre>
 
 
