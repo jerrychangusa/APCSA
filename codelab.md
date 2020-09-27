@@ -216,7 +216,7 @@ Write a method with the following signature that takes as input a player's valid
 
 **public static int getLifePointsCost(String playerMove, String opponentMove);** 
 
-Use the table from "Rules of the Game" to determine which scenarios will result in a life point dedcution.
+Use the table from "Rules of the Game" to determine which scenarios will result in a life point deduction.
 
 The getLifePointsCost method can be used to deduct life points for either the player or the computer.
 
