@@ -200,6 +200,18 @@ Negative
 
 ![Step 7](dbz7.png)
 
+
+## How To Run Tests
+
+You may change the contents of the .env file to change which tests you want to run:
+
+* RUNCLASS=DbzGame to run main method in DbzGame.
+* RUNCLASS=Checkpoint1Tests to run Checkpoint 1 tests.
+* RUNCLASS=Checkpoint2Tests to run Checkpoints 1 - 2 tests.
+* RUNCLASS=Checkpoint3Tests to run Checkpoints 1 - 3 tests.
+* RUNCLASS=Checkpoint4Tests to run Checkpoints 1 - 4 tests.
+* RUNCLASS=Checkpoint5Tests to run Checkpoints 1 - 5 tests.
+
 ## Checkpoint 1: Begin the Game
 To begin the game, ensure that the energy points and life points for the player and computer are initialized.
 
