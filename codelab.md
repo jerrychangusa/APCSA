@@ -11,7 +11,7 @@ feedback link: github.com/changjerry
 ## Introduction
 [Dragon Ball Z] (https://en.wikipedia.org/wiki/Dragon_Ball_Z) is an anime series which features heroes who defend the earth from villains. For this project, you will use your Java skills to build a console game in the spirit of the [Dragon Ball FighterZ game] (https://en.wikipedia.org/wiki/Dragon_Ball_FighterZ).
 
-![caption](dragon-ball-z-fighting.jpg)
+![Dragon Ball Z Battle](dragon-ball-z-fighting.jpg)
 
 
 ## Rules of the Game
@@ -162,6 +162,45 @@ Player Life Points: 3
 No winner after 30 turns!
 ```
 
+## Project Set-Up: Accept the Assignment
+
+### Accept the Assignment
+### Follow GitHub Classroom link for project.
+
+
+### Click “Accept this assignment”.
+![Step 0](dbz0.png)
+
+
+### A copy of the assignment will be generated for you. Once it is done, copy or write down the link URL, then click on it. This will take you to your code repository for the assignment.
+![Step 1](dbz1.png)
+
+
+## Project Set-Up: Open assignment in repl.it 
+
+Negative
+: These steps should only be done once:
+
+### Go to repl.it and click on “+ New repl”.
+![Step 2](dbz2.png)
+
+### Select “Import from GitHub” in the pop up.
+![Step 3](dbz3.png)
+
+### Type or paste the URL from your GitHub code repository in the text box and click on “Import from GitHub”.
+![Step 4](dbz4.png)
+
+![Step 5](dbz5.png)
+
+## Project Set-Up: Accessing your code on repl.it:
+
+### Click on “My repls”.
+
+![Step 6](dbz6.png)
+
+### Find the link to the repl.it for the assignment in the list.
+
+![Step 7](dbz7.png)
 
 ## Checkpoint 1: Begin the Game
 To begin the game, ensure that the energy points and life points for the player and computer are initialized.
