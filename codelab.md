@@ -164,9 +164,7 @@ No winner after 30 turns!
 
 ## Project Set-Up: Accept the Assignment
 
-### Accept the Assignment
 ### Follow GitHub Classroom link for project.
-
 
 ### Click “Accept this assignment”.
 ![Step 0](dbz0.png)
