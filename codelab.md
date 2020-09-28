@@ -281,7 +281,7 @@ Choose a human or a computer for Player 2: computer
 Choose difficulty from Easy, Medium, and Hard for Player 2: Hard
 ```
 
-## Checkpoint 13 (challenge): Three Player Game
+## Checkpoint 12 (challenge): Three Player Game
 When the game begins, prompt for the number of players and support 2 or 3 players.
 
 Modify the game to work with three players (human or computer).
