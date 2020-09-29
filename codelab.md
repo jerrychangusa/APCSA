@@ -177,7 +177,7 @@ No winner after 30 turns!
 ## Project Set-Up: Open assignment in repl.it 
 
 Negative
-: These steps should only be done once:
+: These steps should only be done once.
 
 ### Go to repl.it and click on “+ New repl”.
 ![Step 2](dbz2.png)
