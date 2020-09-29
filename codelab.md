@@ -209,7 +209,7 @@ Negative
 : Be sure to commit your changes every time you complete a checkpoint.
 
 1. Navigate to the Version Control button on the left pane of your Repl.it workspace.
-2. Make sure the branch is set to "main". Write a commit message such as "Finsihed Checkpoint 1".
+2. Make sure the branch is set to "main". Write a commit message such as "Finished Checkpoint 1".
 3. Click the commit and push button.
 4. Your work should now be saved to Github.
 
