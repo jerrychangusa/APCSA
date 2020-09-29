@@ -203,6 +203,9 @@ Negative
 
 ## How To Run Tests
 
+Negative
+: Tests are not comprehensive! Just because tests pass does not guarantee that everything is working. Please do your own testing in your main method.
+
 You may change the contents of the .env file to change which tests you want to run:
 
 * RUNCLASS=DbzGame to run main method in DbzGame.
