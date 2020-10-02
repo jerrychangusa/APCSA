@@ -305,7 +305,7 @@ The getLifePointsCost method can be used to deduct life points for either the pl
 8. Print the result of the move by calling **printPoints**
 
 ## Checkpoint 7: Continue the Game
-Add a for loop to the main method to ensure that 30 turns can be played. Be sure to print the turn number before each turn.
+Add a for loop to the main method to ensure that 30 turns can be played. Remember to print the turn number before each turn.
 
 ## Checkpoint 8: Determine Winner
 Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player's energy points before the next turn.
