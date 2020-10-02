@@ -30,3 +30,8 @@ jobs:
         
       - name: Export claat site
         run: /home/runner/go/bin/claat export codelab.md
+     
+      - name: Netlify Actions
+        uses: nwtgck/actions-netlify@v1.1.11
+        with:
+          publish-dir: dragonball-z-game
