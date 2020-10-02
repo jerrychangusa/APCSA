@@ -30,15 +30,7 @@ jobs:
         
       - name: Export claat site
         run: /home/runner/go/bin/claat export codelab.md
-     
-      - name: Publish on Netlify
-
-  publish:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@master
-
+        
       - name: Publish
         uses: netlify/actions/build@master
         env:
