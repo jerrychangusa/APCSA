@@ -30,3 +30,7 @@ jobs:
         
       - name: Export claat site
         run: claat export codelab.md
+        env:
+          GOPATH: $HOME/Go
+          GOROOT: /usr/local/opt/go/libexec
+          PATH: $PATH:$GOPATH/bin:$GOROOT/bin
