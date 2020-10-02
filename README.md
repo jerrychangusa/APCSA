@@ -2,8 +2,6 @@
 
 To update the www.apcsprojects.com website:
 
-1. Clone this repository
+1. Edit the codelab.md file directly on Github.
 
-2. Apply markdown changes to codelab.md
-
-3. Push your changes to the master branch
+2. Commit the change to the master branch.
