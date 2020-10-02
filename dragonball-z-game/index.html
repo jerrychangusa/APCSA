@@ -238,7 +238,7 @@ No winner after 30 turns!
 </aside>
 <ol type="1">
 <li>Navigate to the Version Control button on the left pane of your Repl.it workspace.</li>
-<li>Make sure the branch is set to &#34;main&#34;. Write a commit message such as &#34;Finsihed Checkpoint 1&#34;.</li>
+<li>Make sure the branch is set to &#34;main&#34;. Write a commit message such as &#34;Finished Checkpoint 1&#34;.</li>
 <li>Click the commit and push button.</li>
 <li>Your work should now be saved to Github.</li>
 </ol>
@@ -280,9 +280,13 @@ Computer Life Points: 3
     
       <google-codelab-step label="Checkpoint 2: Select User Move" duration="0">
         <p>To begin a turn, print the turn number and prompt the user to enter a valid move.</p>
-<p>Write a method with the following siganture that takes as input the player&#39;s energy point, prompts the user to enter a move, and returns the move the player entered.</p>
+<p>Write a method with the following siganture that takes as input the player&#39;s energy point, prompts the user to enter a valid move (based on available energy points), and returns the move for the player.</p>
 <p><strong>public static String getUserMove(int energyPoints);</strong></p>
+<p>For the first move, the player can choose from &#34;defend&#34; and &#34;charge energy&#34;.</p>
 <pre>Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34;): defend
+</pre>
+<p>If the player has energy points, they can choose from &#34;defend&#34;, &#34;charge energy&#34; or &#34;attack&#34;. &#34;special attack&#34; is available if the player has at least 8 energy points.</p>
+<pre>Select from one of the following moves (&#34;defend&#34;, &#34;charge energy&#34;, &#34;attack&#34;): attack
 </pre>
 <aside class="warning"><p>Be sure to include error checking to ensure the user enters a valid move. If the player enters an invalid move, either select a valid one for them or continue asking for a valid move.</p>
 </aside>

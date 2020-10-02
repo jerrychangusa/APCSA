@@ -253,12 +253,18 @@ When you are done, commit your code and move on to checkpoint 2.
 ## Checkpoint 2: Select User Move
 To begin a turn, print the turn number and prompt the user to enter a valid move.
 
-Write a method with the following siganture that takes as input the player's energy point, prompts the user to enter a move, and returns the move the player entered.
+Write a method with the following siganture that takes as input the player's energy point, prompts the user to enter a valid move (based on available energy points), and returns the move for the player.
 
 **public static String getUserMove(int energyPoints);** 
 
+For the first move, the player can choose from "defend" and "charge energy".
 ```console
 Select from one of the following moves ("defend", "charge energy"): defend
+```
+
+If the player has energy points, they can choose from "defend", "charge energy" or "attack". "special attack" is available if the player has at least 8 energy points.
+```console
+Select from one of the following moves ("defend", "charge energy", "attack"): attack
 ```
 
 Negative
