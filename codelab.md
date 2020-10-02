@@ -268,7 +268,7 @@ Select from one of the following moves ("defend", "charge energy", "attack"): at
 ```
 
 Negative
-: Be sure to include error checking to ensure the user enters a valid move. If the player enters an invalid move, either select a valid one for them or continue asking for a valid move.
+: Be sure to include error checking to ensure the user enters a valid move. If the player enters an invalid move, select a valid one for them. Another option is to continue asking for a valid move.
 
 ## Checkpoint 3: Select Computer Move
 Write a method with the following signature that takes as input the computer's energy point and returns a randomly selected valid move for the computer.
