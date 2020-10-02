@@ -29,8 +29,4 @@ jobs:
         run: go get -u -v -x github.com/googlecodelabs/tools/claat
         
       - name: Export claat site
-        run: claat export codelab.md
-        env:
-          GOPATH: $HOME/Go
-          GOROOT: /usr/local/opt/go/libexec
-          PATH: $PATH:$GOPATH/bin:$GOROOT/bin
+        run: /home/runner/go/bin/claat export codelab.md
