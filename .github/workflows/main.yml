@@ -29,7 +29,7 @@ jobs:
         run: go get -u -v -x github.com/googlecodelabs/tools/claat
         
       - name: Export claat site
-        run: /home/runner/go/bin/claat export codelab.md
+        run: /home/runner/go/bin/claat export $GITHUB_WORKSPACE/codelab.md
         
       - name: Publish
         uses: netlify/actions/build@master
