@@ -281,7 +281,7 @@ Write a helper method that takes as input a valid move and returns the amount of
 **public static int getEnergyPointsCost(String move);** 
 
 * "attack" should returns 1.
-* "charge energy" returne -1.
+* "charge energy" returns -1.
 * "special attack" returns 8.
 * "defend" returns 0. 
 
