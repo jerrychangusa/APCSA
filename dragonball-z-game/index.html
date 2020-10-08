@@ -59,12 +59,12 @@
 <tr><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>Charge Energy 🔋</p>
 </td><td colspan="1" rowspan="1"><p>-1 energy point</p>
-</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
+</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points to 0</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Special Attack  ⚡️</p>
 </td><td colspan="1" rowspan="1"><p>Charge Energy 🔋</p>
 </td><td colspan="1" rowspan="1"><p>-8 energy point</p>
-</td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points</p>
+</td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points to 0</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Defend 🛡</p>
 </td><td colspan="1" rowspan="1"><p>Charge Energy 🔋</p>
@@ -73,13 +73,13 @@
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
-</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
-</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
+</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points to 0</p>
+</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points to 0</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Special Attack  ⚡️</p>
 </td><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
 </td><td colspan="1" rowspan="1"><p>-8 energy points</p>
-</td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points</p>
+</td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points to 0</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Defend 🛡</p>
 </td><td colspan="1" rowspan="1"><p>Attack ⚔️</p>
@@ -88,12 +88,12 @@
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Special Attack  ⚡️</p>
 </td><td colspan="1" rowspan="1"><p>Special Attack  ⚡️</p>
-</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
-</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points</p>
+</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points to 0</p>
+</td><td colspan="1" rowspan="1"><p>-1 life point, reset energy points to 0</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Defend 🛡</p>
 </td><td colspan="1" rowspan="1"><p>Special Attack  ⚡️</p>
-</td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points</p>
+</td><td colspan="1" rowspan="1"><p>-3 life points, reset energy points to 0</p>
 </td><td colspan="1" rowspan="1"><p>-8 energy points</p>
 </td></tr>
 <tr><td colspan="1" rowspan="1"><p>Defend 🛡</p>
@@ -345,7 +345,7 @@ Computer Life Points: 3
       </google-codelab-step>
     
       <google-codelab-step label="Checkpoint 8: Determine Winner" duration="0">
-        <p>Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player&#39;s energy points before the next turn.</p>
+        <p>Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player&#39;s energy points to 0 before the next turn.</p>
 <p>If any player loses all of their life points, declare the other player the winner and end the game.</p>
 <pre>Player Move: charge energy
 Computer Move: special attack
