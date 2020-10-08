@@ -32,14 +32,14 @@ The following table shows the result of a pair of moves chosen by two players:
 | **Player 1**       | **Player 2**     |   **Player 1 Result**  | **Player 2 Result** |
 | :------------- | :----------: | :----------------: |-----------------: |
 |  Charge Energy 🔋 | Charge Energy 🔋| +1 energy point| +1 energy point |
-|  Attack ⚔️  | Charge Energy 🔋| -1 energy point | -1 life point, reset energy points|
-|  Special Attack  ⚡️ | Charge Energy 🔋| -8 energy point| -3 life points, reset energy points |
+|  Attack ⚔️  | Charge Energy 🔋| -1 energy point | -1 life point, reset energy points to 0|
+|  Special Attack  ⚡️ | Charge Energy 🔋| -8 energy point| -3 life points, reset energy points to 0|
 |  Defend 🛡  | Charge Energy 🔋| nothing | +1 energy point|
-|  Attack ⚔️ | Attack ⚔️| -1 life point, reset energy points| -1 life point, reset energy points |
-|  Special Attack  ⚡️  | Attack ⚔️| -8 energy points | -3 life points, reset energy points|
+|  Attack ⚔️ | Attack ⚔️| -1 life point, reset energy points to 0| -1 life point, reset energy points to 0|
+|  Special Attack  ⚡️  | Attack ⚔️| -8 energy points | -3 life points, reset energy points to 0|
 |  Defend 🛡| Attack ⚔️| nothing | -1 energy point |
-|  Special Attack  ⚡️  | Special Attack  ⚡️| -1 life point, reset energy points | -1 life point, reset energy points|
-|  Defend 🛡 | Special Attack  ⚡️| -3 life points, reset energy points| -8 energy points |
+|  Special Attack  ⚡️  | Special Attack  ⚡️| -1 life point, reset energy points to 0| -1 life point, reset energy points to 0|
+|  Defend 🛡 | Special Attack  ⚡️| -3 life points, reset energy points to 0| -8 energy points |
 |  Defend 🛡 | Defend 🛡 | nothing | nothing |
 
 
@@ -308,7 +308,7 @@ The getLifePointsCost method can be used to deduct life points for either the pl
 Add a for loop to the main method to ensure that 30 turns can be played. Remember to print the turn number before each turn.
 
 ## Checkpoint 8: Determine Winner
-Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player's energy points before the next turn.
+Within the for loop, check the life points for each player. If any life points are lost, be sure to reset that player's energy points to 0 before the next turn.
 
 If any player loses all of their life points, declare the other player the winner and end the game.
 
