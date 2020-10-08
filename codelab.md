@@ -278,7 +278,7 @@ Write a method with the following signature that takes as input the computer's e
 ## Checkpoint 4: Calculate Energy Point Cost
 Write a helper method that takes as input a valid move and returns the amount of energy the move will cost. 
 
-**public static int getEnergyPointsCost(String move);** 
+**public static int calculateEnergyPointsCost(String move);** 
 
 * "attack" should returns 1.
 * "charge energy" returns -1.
@@ -288,21 +288,22 @@ Write a helper method that takes as input a valid move and returns the amount of
 ## Checkpoint 5: Calculate Life Point Cost
 Write a method with the following signature that takes as input a player's valid move and an opponent's valid move and returns the amount of life points to deduct from the player.
 
-**public static int getLifePointsCost(String playerMove, String opponentMove);** 
+**public static int calculateLifePointsCost(String playerMove, String opponentMove);** 
 
 Use the table from "Rules of the Game" to determine which scenarios will result in a life point deduction.
 
-The getLifePointsCost method can be used to deduct life points for either the player or the computer.
+The calculateLifePointsCost method can be used to deduct life points for either the player or the computer.
 
 ## Checkpoint 6: Begin a Turn
 1. In the main method, begin the game by calling **printPoints**. 
 2. Prompt the user for a move by calling **getUserMove**.
 3. Get the computer's move by calling **getComputerMove**.
-4. Deduct or increase the player's energy points by calling **getEnergyPointsCost**.
-5. Deduct or increase the computer's energy points by calling **getEnergyPointsCost**.
-6. Deduct or increase the players's life points by calling **getLifePointsCost**.
-7. Deduct or increase the computer's life points by calling **getLifePointsCost**.
-8. Print the result of the move by calling **printPoints**
+4. Print both the player's and the computer's moves.
+5. Deduct or increase the player's energy points by calling **getEnergyPointsCost**.
+6. Deduct or increase the computer's energy points by calling **getEnergyPointsCost**.
+7. Deduct or increase the players's life points by calling **getLifePointsCost**.
+8. Deduct or increase the computer's life points by calling **getLifePointsCost**.
+9. Print the result of the move by calling **printPoints**
 
 ## Checkpoint 7: Continue the Game
 Add a for loop to the main method to ensure that 30 turns can be played. Remember to print the turn number before each turn.
