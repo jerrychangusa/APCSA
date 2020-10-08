@@ -303,7 +303,7 @@ Computer Life Points: 3
     
       <google-codelab-step label="Checkpoint 4: Calculate Energy Point Cost" duration="0">
         <p>Write a helper method that takes as input a valid move and returns the amount of energy the move will cost.</p>
-<p><strong>public static int getEnergyPointsCost(String move);</strong></p>
+<p><strong>public static int calculateEnergyPointsCost(String move);</strong></p>
 <ul>
 <li>&#34;attack&#34; should returns 1.</li>
 <li>&#34;charge energy&#34; returns -1.</li>
@@ -316,9 +316,9 @@ Computer Life Points: 3
     
       <google-codelab-step label="Checkpoint 5: Calculate Life Point Cost" duration="0">
         <p>Write a method with the following signature that takes as input a player&#39;s valid move and an opponent&#39;s valid move and returns the amount of life points to deduct from the player.</p>
-<p><strong>public static int getLifePointsCost(String playerMove, String opponentMove);</strong></p>
+<p><strong>public static int calculateLifePointsCost(String playerMove, String opponentMove);</strong></p>
 <p>Use the table from &#34;Rules of the Game&#34; to determine which scenarios will result in a life point deduction.</p>
-<p>The getLifePointsCost method can be used to deduct life points for either the player or the computer.</p>
+<p>The calculateLifePointsCost method can be used to deduct life points for either the player or the computer.</p>
 
 
       </google-codelab-step>
@@ -328,6 +328,7 @@ Computer Life Points: 3
 <li>In the main method, begin the game by calling <strong>printPoints</strong>.</li>
 <li>Prompt the user for a move by calling <strong>getUserMove</strong>.</li>
 <li>Get the computer&#39;s move by calling <strong>getComputerMove</strong>.</li>
+<li>Print both the player&#39;s and the computer&#39;s moves.</li>
 <li>Deduct or increase the player&#39;s energy points by calling <strong>getEnergyPointsCost</strong>.</li>
 <li>Deduct or increase the computer&#39;s energy points by calling <strong>getEnergyPointsCost</strong>.</li>
 <li>Deduct or increase the players&#39;s life points by calling <strong>getLifePointsCost</strong>.</li>
